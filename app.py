@@ -6,7 +6,7 @@ def add(a: int, b: int) -> int:
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/health":
-            body = b"OK"
+            body = b"OK Maxim Zemtsov FORS"
             self.send_response(200)
             self.send_header("Content-Type", "text/plain")
             self.send_header("Content-Length", str(len(body)))
